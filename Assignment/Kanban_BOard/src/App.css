@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Kanban Board Layout */
+.kanban-board {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f4f5f7;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* Left part of the navbar (with Display button) */
+.nav-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Display Button */
+.display-btn {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between the icon and text */
+}
+
+.display-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Right side Add button */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 15px;
+}
+
+.dropdown label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #6b7280; /* Light grey color for labels */
+}
+
+.dropdown select {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f9fafb;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Kanban Container */
+.kanban-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Each column in the Kanban board */
+.kanban-column {
+  background-color: #f4f5f7;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the Status Icons in Kanban Column Headers */
+.status-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+
+/* Column Header (with icon) */
+.kanban-column h2 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+  gap: 8px;
+}
+
+.kanban-column h2 img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Each card (ticket) inside the column */
+.kanban-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kanban-card-header img {
+  vertical-align: middle; /* Ensure image aligns vertically with the text */
+  width: 16px; /* Adjust size if needed */
+  height: 16px; /* Adjust size if needed */
+}
+
+.ticket-id {
+  font-weight: bold;
+  color: #555;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.ticket-title {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.ticket-tag {
+  font-size: 12px;
+  padding: 0; /* Remove any padding */
+  background-color: transparent; /* No background */
+  border-radius: 0; /* Remove border radius */
+  display: inline-block; /* Align next to the image */
+  margin-left: 8px; /* Add a small margin to the left of the image */
+  color: #555; /* Text color */
+}
+.priority-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Icons for the different statuses */
+.todo-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.in-progress-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.done-icon {
+  width: 20px;
+  height: 20px;
+}
